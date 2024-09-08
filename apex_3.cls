@@ -1,0 +1,8 @@
+
+
+public class MyClass {
+  public static void myMethod() {
+    String str = 'My team\'s name is \'SFDCFacts Academy\'. \n We work on apex.';
+    System.debug(str);
+  }
+}
