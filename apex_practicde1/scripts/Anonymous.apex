@@ -57,19 +57,49 @@ firstClass.printGoodEvening();
 */
 
 // print public var's value
-System.debug(firstClass.publicGreeting);
+// System.debug(firstClass.publicGreeting);
 
 // calling same method multiple times with different values
-firstClass.printMessage('Hello World');
-firstClass.printMessage('This is generic method');
-firstClass.printMessage('Good Morning');
+// firstClass.printMessage('Hello World');
+// firstClass.printMessage('This is generic method');
+// firstClass.printMessage('Good Morning');
 
-System.debug(firstClass.getDay(0));
-System.debug(firstClass.getDay(2));
-System.debug(firstClass.getDay(6));
-System.debug(firstClass.getDay(10));
+// System.debug(firstClass.getDay(0));
+// System.debug(firstClass.getDay(2));
+// System.debug(firstClass.getDay(6));
+// System.debug(firstClass.getDay(10));
 
-System.debug(firstClass.getDay('Sun'));
-System.debug(firstClass.getDay('Tue'));
-System.debug(firstClass.getDay('Thu'));
-System.debug(firstClass.getDay('asdasda'));
+// System.debug(firstClass.getDay('Sun'));
+// System.debug(firstClass.getDay('Tue'));
+// System.debug(firstClass.getDay('Thu'));
+// System.debug(firstClass.getDay('asdasda'));
+
+// -------------------------------------------------
+Covid19 jaipur = new Covid19();
+
+//インスタンス変数にアクセスするとき
+System.debug('Recoverd in jaipur : '+jaipur.recoveredInArea);
+//インスタンスメソッっどにアクセスする場合　インクリメントする
+jaipur.treatPatient();
+
+
+
+//staticを使用するとインスタンスを通じてアクセスするのではなく、クラス名を使ってstatic変数にアクセスする必要ある
+System.debug('Recoverd in country : '+Covid19.recoveredInCountry);
+System.debug('Recoverd in country : '+Covid19.recoveredInCountry);
+//staticメソットにアクセスする場合
+Covid19.printTreated();
+
+
+
+
+System.debug('Recoverd in jaipur : '+jaipur.recoveredInArea);
+Covid19.printTreated();
+//System.debug('Recoverd in country : '+Covid19.recoveredInCountry);
+
+Covid19 hyd = new Covid19();
+hyd.treatPatient(); //インクリメントする
+
+System.debug('Recoverd in hyd : '+hyd.recoveredInArea);
+Covid19.printTreated();
+//System.debug('Recoverd in country : '+Covid19.recoveredInCountry);
