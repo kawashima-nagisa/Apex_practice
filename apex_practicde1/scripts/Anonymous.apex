@@ -1,0 +1,45 @@
+
+// // クラスをインスタンス化
+// HelloWorld firstClass = new HelloWorld();
+
+// // public変数を出力
+// firstClass.printGreeting();
+
+// // public変数の直接アクセス
+// System.debug(firstClass.publicGreeting);
+
+
+
+// // privteな値にそのままアクセスしているのでエラーになる
+// // System.debug(firstClass.greeting);
+
+// -------------------------------------------------------
+
+// initializes the class
+HelloWorld firstClass = new HelloWorld();
+
+// get an error for private variable
+//System.debug(firstClass.greeting);
+
+firstClass.printGreeting();
+firstClass.printGoodMorning();
+firstClass.printGoodAfternoon();
+firstClass.printGoodEvening();
+
+
+// print public var's value
+System.debug(firstClass.publicGreeting);
+
+firstClass.printMessage('Hello World');
+firstClass.printMessage('This is generic method');
+firstClass.printMessage('Good Morning');
+
+System.debug(firstClass.getDay(0));
+System.debug(firstClass.getDay(2));
+System.debug(firstClass.getDay(6));
+System.debug(firstClass.getDay(10));
+
+System.debug(firstClass.getDay('Sun'));
+System.debug(firstClass.getDay('Tue'));
+System.debug(firstClass.getDay('Thu'));
+System.debug(firstClass.getDay('asdasda'));
