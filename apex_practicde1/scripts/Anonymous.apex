@@ -94,7 +94,7 @@ Covid19.printTreated();
 
 
 System.debug('Recoverd in jaipur : '+jaipur.recoveredInArea);
-Covid19.printTreated();
+Covid19.PrintTreated();
 //System.debug('Recoverd in country : '+Covid19.recoveredInCountry);
 
 Covid19 hyd = new Covid19();

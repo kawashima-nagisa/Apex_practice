@@ -5,7 +5,7 @@
 public class Covid19 {
     public Integer recoveredInArea = 0;
 
-    
+
     //static variable
     public static Integer recoveredInCountry = 0;
 
